@@ -1,0 +1,137 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.foo-logo a {
+  font-family: "Rouge Script", cursive;
+  font-size: 70px;
+  text-decoration: none;
+  color: #fef4f2;
+  &::first-letter {
+    color: $red;
+  }
+}
+.logo a {
+  font-family: "Rouge Script", cursive;
+  font-size: 35px;
+  text-decoration: none;
+  color: $grayTextDark;
+  span {
+    font-family: "Rouge Script", cursive;
+    color: $red;
+  }
+}
+.nav {
+  font-size: 14px;
+  line-height: 27px;
+}
+.title-block {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.title-description {
+  font-size: 18px;
+  font-weight: 400px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.start-title {
+  font-size: 60px;
+  line-height: 85px;
+}
+.about-title {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 38px;
+}
+.team-social-item,
+.focus-description {
+  font-size: 15px;
+}
+.step-title {
+  font-size: 25px;
+}
+.step-description,
+.team-body,
+.about-description {
+  font-size: 15px;
+  line-height: 27px;
+}
+.price-title,
+.statistics-number,
+.team-title,
+.focus-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.price-product {
+  font-size: 25px;
+  line-height: 24px;
+  span {
+    font-size: 13px;
+  }
+}
+.price-property {
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 500;
+  span {
+    font-weight: 400;
+  }
+}
+.slider-signature {
+  font-size: 40px;
+  font-family: "Sacramento", cursive;
+}
+.select-form label {
+  font-size: 25px;
+  line-height: 26px;
+}
+.article-author {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.article-date,
+.slider-credo,
+.team-spec {
+  font-size: 13px;
+  font-weight: 400;
+}
+.article-title,
+.select-title,
+.slider-name-client,
+.team-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.article-body,
+.select-description,
+.slider-description,
+.statistics-name {
+  font-size: 15px;
+  font-weight: 400;
+  a {
+    font-weight: 500;
+  }
+}
+.title-subscribe {
+  font-size: 30px;
+}
+.order input,
+.order textarea,
+.subscribe .subscribe-item {
+  font-size: 16px;
+}
+.foo-container .foo-title,
+.start-info {
+  font-size: 18px;
+  font-weight: 500;
+}
+.foo-container p {
+  font-size: 16px;
+  font-weight: 400;
+}

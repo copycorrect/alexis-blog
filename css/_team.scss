@@ -1,0 +1,141 @@
+.team {
+  background-color: $superLightGray;
+  padding: 140px 0;
+
+  input {
+    display: none;
+  }
+  .team-block {
+    display: flex;
+    padding-bottom: 400px;
+    position: relative;
+  }
+  .team-item {
+    width: 25%;
+    margin-right: 30px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    margin-bottom: 9px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+  }
+  .team-name {
+    display: block;
+    margin: 13px 0;
+    text-align: center;
+  }
+  .bottom-red {
+    .team-name {
+      color: $red;
+    }
+  }
+  .bottom-green {
+    .team-name {
+      color: $green;
+    }
+  }
+  .bottom-purple {
+    .team-name {
+      color: $purple;
+    }
+  }
+  .bottom-orange {
+    .team-name {
+      color: $orange;
+    }
+  }
+
+  .team-spec {
+    color: $grayTextLight;
+    display: block;
+    margin: 13px 0 15px;
+    text-align: center;
+  }
+  .team-description {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 70px 90px;
+    flex-direction: column;
+    &::before {
+      display: none;
+      content: "";
+      background-color: #ffffff;
+      top: -25px;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      transform: rotate(45deg);
+      left: 10%;
+    }
+  }
+  .team-item:nth-child(2) .team-description {
+    &::before {
+      left: 35%;
+    }
+  }
+
+  .team-item:nth-child(3) .team-description {
+    &::before {
+      left: 60%;
+    }
+  }
+  .team-item:nth-child(4) .team-description {
+    &::before {
+      left: 85%;
+    }
+  }
+
+  input:checked + .team-description {
+    display: flex;
+    &::before {
+      display: block;
+    }
+  }
+  .team-description-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+  }
+  .time-title {
+    width: 100%;
+  }
+  .team-body {
+    width: 80%;
+    display: block;
+    padding-right: 15%;
+    color: $grayTextLight;
+    border-right: 2px solid #efefef;
+  }
+  .social-links {
+    width: 20%;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    img {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      background-color: $darkGray;
+    }
+  }
+  .team-social-item {
+    a {
+      text-decoration: none;
+      color: $grayTextLight;
+      &:hover {
+        text-decoration: underline;
+        color: #000000;
+      }
+    }
+  }
+}

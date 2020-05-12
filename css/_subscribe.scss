@@ -1,0 +1,31 @@
+.subscribe {
+  padding: 150px 0;
+  text-align: center;
+  .title-subscribe {
+    color: $grayTextDark;
+    margin-bottom: 50px;
+  }
+  .subscribe-form {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  .subscribe-item {
+    width: 66%;
+    height: 50px;
+    border: solid 2px #efefef;
+    border-radius: 25px 0px 0px 25px;
+    padding: 0 30px;
+    outline: none;
+    background-color: #f7f7f7;
+  }
+  .subscribe-button {
+    width: 34%;
+    border-radius: 0px 25px 25px 0px;
+    color: #ffffff;
+    background-color: $red;
+    &:hover {
+      background-color: $redHover;
+    }
+  }
+}

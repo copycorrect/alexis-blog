@@ -1,0 +1,69 @@
+.footer {
+  background-color: $lightGray;
+  padding-bottom: 125px;
+}
+.foo-container {
+  background-color: $darkGray;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  &::after {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+      to right,
+      $red 25%,
+      $green 25%,
+      $green 50%,
+      $purple 50%,
+      $purple 75%,
+      $orange 75%
+    );
+  }
+
+  .foo-logo,
+  .foo-address-one,
+  .foo-address-two,
+  .foo-follow {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: $creamText;
+    padding: 0 4% 2%;
+  }
+  .foo-logo {
+    align-self: center;
+  }
+  .foo-address-one {
+    .foo-title {
+      color: $green;
+    }
+  }
+  .foo-address-two {
+    .foo-title {
+      color: $purple;
+    }
+  }
+  .foo-follow {
+    .foo-title {
+      color: $orange;
+      margin-bottom: 36px;
+    }
+  }
+  .social-icons {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    line-height: 27px;
+    img {
+      margin-right: 14px;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+}

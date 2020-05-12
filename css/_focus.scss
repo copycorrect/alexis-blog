@@ -1,0 +1,29 @@
+.focus {
+  padding: 140px 0;
+  background-color: $superLightGray;
+  .focus-block {
+    display: flex;
+  }
+  .focus-item {
+    width: 25%;
+    margin-right: 30px;
+    padding: 60px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    text-align: center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  img {
+    margin-bottom: 30px;
+  }
+  .focus-title {
+    color: $grayTextDark;
+    margin-bottom: 30px;
+  }
+  .focus-description {
+    color: $grayTextLight;
+    line-height: 25px;
+  }
+}

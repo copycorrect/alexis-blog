@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  counter-reset: section;
+}
+.common-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px;
+  outline: none;
+  color: #ffffff;
+  background-color: $red;
+  transition: 0.7s;
+  cursor: pointer;
+  &:hover {
+    background-color: $redHover;
+  }
+}
+.bottom-red {
+  border-bottom: 3px solid $red;
+}
+.bottom-green {
+  border-bottom: 3px solid $green;
+}
+.bottom-orange {
+  border-bottom: 3px solid $orange;
+}
+.bottom-purple {
+  border-bottom: 3px solid $purple;
+}

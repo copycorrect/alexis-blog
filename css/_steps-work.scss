@@ -1,0 +1,52 @@
+.work-steps {
+  padding: 140px 0;
+  .steps-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .step-item {
+    padding: 60px 60px 50px 120px;
+    width: 40%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+    background-color: #ffffff;
+    &::before {
+      counter-increment: section;
+      content: "0" counter(section);
+      color: #e0e0e0;
+      font-size: 50px;
+      position: absolute;
+      left: 40px;
+      top: 45px;
+    }
+    &::after {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      content: "";
+      width: 100%;
+      height: 273px;
+      background-image: url("/img/cake-1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: 50px;
+      right: 75%;
+    }
+  }
+  .step-item:nth-child(2n-1) {
+    align-self: flex-start;
+    &::after {
+      left: 75%;
+    }
+  }
+  .step-item:nth-child(2n) {
+    align-self: flex-end;
+  }
+  .step-title {
+    color: $grayTextDark;
+    margin-bottom: 24px;
+  }
+  .step-description {
+    color: $grayTextLight;
+  }
+}

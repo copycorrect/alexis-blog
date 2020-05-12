@@ -1,0 +1,38 @@
+.select {
+  padding: 140px 0;
+  .select-block {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    margin-bottom: 90px;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+  }
+  .select-item {
+    width: 33.3333%;
+    padding: 0 2%;
+    margin-bottom: 70px;
+  }
+  .select-title {
+    color: $grayTextDark;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .select-description {
+    color: $grayTextLight;
+    line-height: 26px;
+  }
+  .select-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+      margin-right: 25px;
+    }
+  }
+}
