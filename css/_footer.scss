@@ -1,12 +1,23 @@
 .footer {
   background-color: $lightGray;
-  padding-bottom: 125px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  @media(min-width: 787px) {
+    padding-bottom: 125px;
+    padding-top: 30px;
+  }
 }
+
 .foo-container {
   background-color: $darkGray;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
   position: relative;
+  @media(min-width: 787px) {
+    align-items: baseline;
+    flex-direction: row;
+  }
+
   &::after {
     position: absolute;
     display: block;
@@ -15,55 +26,76 @@
     width: 100%;
     height: 4px;
     background: linear-gradient(
-      to right,
-      $red 25%,
-      $green 25%,
-      $green 50%,
-      $purple 50%,
-      $purple 75%,
-      $orange 75%
+                    to right,
+                    $red 25%,
+                    $green 25%,
+                    $green 50%,
+                    $purple 50%,
+                    $purple 75%,
+                    $orange 75%
     );
   }
+}
 
-  .foo-logo,
-  .foo-address-one,
-  .foo-address-two,
-  .foo-follow {
-    display: flex;
-    flex-direction: column;
+.foo-logo,
+.foo-address-one,
+.foo-address-two,
+.foo-follow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $creamText;
+  padding: 0 4% 2%;
+  align-items: center;
+  text-align: center;
+  @media(min-width: 787px) {
     width: 25%;
-    color: $creamText;
-    padding: 0 4% 2%;
-  }
-  .foo-logo {
-    align-self: center;
-  }
-  .foo-address-one {
-    .foo-title {
-      color: $green;
-    }
-  }
-  .foo-address-two {
-    .foo-title {
-      color: $purple;
-    }
-  }
-  .foo-follow {
-    .foo-title {
-      color: $orange;
-      margin-bottom: 36px;
-    }
-  }
-  .social-icons {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    line-height: 27px;
-    img {
-      margin-right: 14px;
-    }
-    a:hover {
-      opacity: 0.7;
-    }
   }
 }
+
+.foo-logo {
+  align-self: center;
+}
+
+.foo-address-one {
+  .foo-title {
+    color: $green;
+  }
+
+}
+.foo-address-two {
+  .foo-title {
+    color: $purple;
+  }
+}
+
+.foo-follow {
+  margin: 0 auto;
+  padding-bottom: 15px;
+  .foo-title {
+    color: $orange;
+    margin-bottom: 36px;
+  }
+}
+
+.social-icons {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  line-height: 27px;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin-right: 14px;
+    transition: opacity 0.5s;
+  }
+  a:last-child{
+    margin-right: 0;
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+}
+
+

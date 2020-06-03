@@ -1,38 +1,66 @@
 .select {
-  padding: 140px 0;
-  .select-block {
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 50px;
-    margin-bottom: 90px;
-    img {
-      width: 50px;
-      height: 50px;
-      margin-right: 20px;
-    }
+  padding: 50px 0;
+  @media (min-width: 960px){
+    padding: 140px 0;
   }
-  .select-item {
-    width: 33.3333%;
-    padding: 0 2%;
+}
+
+.select-block {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 50px;
+  margin-bottom: 40px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  @media (min-width: 960px){
+    margin-bottom: 90px;
+  }
+}
+
+.select-item {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  @media (min-width: 787px) {
+    width: calc(100% / 2);
+    margin-bottom: 50px;
+  }
+  @media (min-width: 960px) {
+    width: calc(100% / 3);
     margin-bottom: 70px;
   }
-  .select-title {
-    color: $grayTextDark;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+}
+
+.select-title {
+  color: $grayTextDark;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.select-description {
+  color: $grayTextLight;
+  line-height: 26px;
+}
+
+.select-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  label{
+    margin: 0 0 25px;
   }
-  .select-description {
-    color: $grayTextLight;
-    line-height: 26px;
-  }
-  .select-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media (min-width: 787px) {
+    flex-direction: row;
     label {
-      margin-right: 25px;
+      margin: 0 25px 0;
     }
   }
 }
+
