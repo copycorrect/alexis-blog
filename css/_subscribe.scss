@@ -1,31 +1,71 @@
 .subscribe {
-  padding: 150px 0;
+  padding: 50px 0;
   text-align: center;
   .title-subscribe {
     color: $grayTextDark;
     margin-bottom: 50px;
   }
-  .subscribe-form {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 0;
-  }
-  .subscribe-item {
-    width: 66%;
-    height: 50px;
-    border: solid 2px #efefef;
-    border-radius: 25px 0px 0px 25px;
-    padding: 0 30px;
-    outline: none;
-    background-color: #f7f7f7;
-  }
-  .subscribe-button {
-    width: 34%;
-    border-radius: 0px 25px 25px 0px;
-    color: #ffffff;
-    background-color: $red;
-    &:hover {
-      background-color: $redHover;
-    }
+  @media (min-width: 960px){
+    padding: 150px 0;
   }
 }
+
+.subscribe-form {
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  @media (min-width: 551px){
+    flex-direction: row;
+  }
+  @media (min-width: 551px){
+    flex-direction: row;
+  }
+  @media (min-width: 960px){
+    padding: 0 20%;
+  }
+
+}
+
+.subscribe-item {
+  display: inline-block;
+  width: 66%;
+  border: solid 2px #efefef;
+  padding: 13px 30px;
+  outline: none;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: calc((16px + 30px)/2);
+  border-top-left-radius: calc((16px + 30px)/2);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  @media (max-width: 550px){
+    width: 100%;
+    border-radius: calc((16px + 30px)/2);
+    padding: 13px 20px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 550.1px){
+
+  }
+
+}
+
+.subscribe-button {
+  width: 34%;
+ border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  color: #ffffff;
+  background-color: $red;
+
+  &:hover {
+    background-color: $redHover;
+  }
+  @media (max-width: 550px){
+    border-radius: calc((16px + 30px)/2);
+    padding: 13px 20px;
+    width: auto;
+  }
+}
+

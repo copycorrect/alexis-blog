@@ -137,34 +137,7 @@ Sim.initialize = function (that) {
     that.sldrList.addEventListener("mouseleave", setAutoScroll, false);
   }
 
-  if (that.options.arrows) {
-    // инициализация стрелок
-    that.leftArrow.addEventListener(
-      "click",
-      function () {
-        let fnTime = getTime();
-        if (fnTime - bgTime > 1000) {
-          bgTime = fnTime;
-          that.elemPrev();
-        }
-      },
-      false
-    );
-    that.rightArrow.addEventListener(
-      "click",
-      function () {
-        let fnTime = getTime();
-        if (fnTime - bgTime > 1000) {
-          bgTime = fnTime;
-          that.elemNext();
-        }
-      },
-      false
-    );
-  } else {
-    that.leftArrow.style.display = "none";
-    that.rightArrow.style.display = "none";
-  }
+
 
   if (that.options.dots) {
     // инициализация индикаторных точек
